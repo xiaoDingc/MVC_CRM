@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+@model itcast.CRM15.Model.ModelViews.sysFunctionView
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @if (Model != null)
+        {
+            @Model.fName
+        }
+        else
+        {
+            @:视图没有找到
+        }
+    </div>
+</body>
+</html>

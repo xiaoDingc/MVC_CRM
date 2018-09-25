@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ecd5cad1d1744a4cb22b88edae076e36" Name="关系图1">
+        <EntityTypeShape EntityType="JKCRMModel.sysFunction" Width="1.5" PointX="8.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysKeyValue" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysMenus" Width="1.5" PointX="6" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysOrganStruct" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysPermissList" Width="1.5" PointX="10.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysRole" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysUserInfo" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.sysUserInfo_Role" Width="1.5" PointX="10.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.wfProcess" Width="1.5" PointX="13.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.wfRequestForm" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.wfWork" Width="1.5" PointX="5.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.wfWorkBranch" Width="1.5" PointX="10.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JKCRMModel.wfWorkNodes" Width="1.5" PointX="8" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="JKCRMModel.FK_sysFunction_sysMenus" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysPermissList_sysFunction" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_OrganStruct_KeyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysRole_sysKeyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfProcess_sysKeyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfRequestForm_sysKeyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfRequestForm_sysKeyValue1" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfWorkNodes_sysKeyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfWorkNodes_sysKeyValue1" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysPermissList_sysMenus" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysRole_sysOrganStruct" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysUserInfo_sysOrganStruct" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysUserInfo_sysOrganStruct1" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysUserInfo_sysOrganStruct2" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysPermissList_sysRole" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysUserInfo_Role_sysRole" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_sysUserInfo_Role_sysUserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfRequestForm_sysUserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfProcess_wfRequestForm" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfProcess_wfWorkNodes" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfRequestForm_wfWork" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfWorkNodes_wfWork" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfWorkBranch_wfWorkNodes" ManuallyRouted="false" />
+        <AssociationConnector Association="JKCRMModel.FK_wfWorkBranch_wfWorkNodes1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
